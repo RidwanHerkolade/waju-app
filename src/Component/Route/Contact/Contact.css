@@ -1,0 +1,156 @@
+.centered {
+    width: 100%;
+
+}
+.centered__div {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+
+}
+.nav__divs {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__img {
+    width: 100%;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+}
+.gridss__img {
+    width: 100%;
+
+}
+.imgs__grid {
+    width: 100%;
+    height: 70vh;
+}
+.imgs__grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.second__img {
+    height: 70vh;
+    width: 100%;
+}
+.img__shii {
+    height: 35vh;
+    width: 100%;
+}
+.img__shii img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.form__action {
+    padding: 1rem;
+    background: var(--color-whites);
+    width: 100%;
+    
+}
+h4 {
+    color: var(--color-nav);
+    font-size: var(--font-logo);
+    text-transform: capitalize;
+}
+.contact__input {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem 0rem;
+}
+.input__inp {
+    width: 100%;
+}
+textarea {
+    resize: none;
+    margin: 0.5rem 0rem;
+    border: 0.5px solid var(--color-border);
+    padding: 0.4rem;
+    outline: none;
+    font-family: var(--font-family);
+    width: 100%;
+    border-radius: 0.1rem;
+    height: 25vh;
+}
+
+/* DISPLAY PAGE */
+.display__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact__div {
+    display: flex;
+    top: 23%;
+    width: 30%;
+    padding: 4rem;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-white);
+    box-shadow: var(--box-shadow);
+
+
+}
+.icon__divs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact__img {
+    width: 7rem;
+    height: 7rem;
+}
+.contact__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.contact__content {
+    font-size: var(--font-fold);
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav__divs {
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .imgs__grid {
+        height: 60vh;
+    }
+   
+    .second__img {
+        height: 60vh;
+    }
+    .img__shii {
+        height: 30vh;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .grid__img {
+        width: 100%;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .centered__div {
+
+        padding: 3rem;
+    
+    }
+
+}

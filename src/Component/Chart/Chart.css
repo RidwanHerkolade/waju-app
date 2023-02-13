@@ -1,0 +1,41 @@
+.chart {
+    width:  100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center; 
+     background: var(--color-white);
+     
+}
+.color {
+    border-radius: 0.1rem;
+    background-color: var(--color-whites);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.header__blake {
+    margin-bottom: 3rem;
+    color: var(--color-blackie);
+    font-weight: 700;
+    font-size: var(--font-logos);
+
+}
+@media screen and (max-width: 1024px) {
+    .chart {
+        height: 45vh;
+    }
+
+
+    
+}
+@media screen and (max-width:600px) {
+    .chart {
+        height: 70vh;
+         
+    }
+
+    
+}
