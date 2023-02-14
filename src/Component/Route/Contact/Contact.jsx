@@ -19,14 +19,14 @@ function Contact(){
                        <div className="centered">
                              <div className="centered__div">
                                     <div className="nav__divs">
-                                    {/* <div className="grid"> */}
+                                
                                     <form action="" className="form__action" onSubmit={handleSubmit(onSubmit)}>
                                         <h4>contact</h4>
                                        
                                             <input
-                                                 type="name"
-                                                 placeholder="firstName"
-                                                 name="firstName"
+                                                  type="name"
+                                                  placeholder="firstName"
+                                                  name="firstName"
                                                   className="contact__input"
                                                   { ...register("firstName",{required: "your name is required"})}
 
@@ -59,10 +59,7 @@ function Contact(){
                                         <button type="submit">send</button>
                                         
                                  </form>
-                           
-
-                                    {/* </div> */}
-                           
+                       
                                     
                             <div className="grid__img">
                                 <div className="gridss__img">

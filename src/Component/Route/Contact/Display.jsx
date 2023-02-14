@@ -17,7 +17,7 @@ function Display(){
                 </div>
   
                     <div className="contact__content">Sent Successfully</div>
-                    <button className="disp;ay__btn" onClick={handleClick}>ok</button>
+                    <button className="disp;ay__btn" onSubmit={handleClick}>ok</button>
                
              </div>
              

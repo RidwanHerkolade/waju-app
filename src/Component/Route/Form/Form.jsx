@@ -1,4 +1,4 @@
-// import React,{useState} from "react";
+
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router";
 import './Form.css';
@@ -9,40 +9,6 @@ function Form(){
        const onSubmit =() => {
               navigate("/confirm");
        }
-//        const [FormErrors, setFormErrors] = useState([]);
-//        const [register, setRegister] = useState({
-//               firstName: "",
-//               lastName: "",
-//               email: "",
-//               phoneNo:  ""
-//        });
-
-// function handleChange(event){
-//        const { name, value} = event.target;
-//        setRegister((prevRegister) => {
-//               return {
-//                      ...prevRegister,
-//                      [name]: value,
-//               };
-//        });
-//   };
- 
-//   function handleValidate(formValue){
-//          const errors = {};
-//          if(!formValue.firstName) {
-//                 errors.firstName= "firstName is required";
-//          }
-//          setFormErrors(errors);
-//          return errors;
-//   };
-//   function handleSubmit(event){
-//          event.preventDefault();
-//          const validation = handleValidate(register);
-//          if(Object.keys(validation).length !== 0 ) {
-//                 return;
-//          }
-
-//   }
 
     return(
         <div className="form__div">
@@ -94,7 +60,7 @@ function Form(){
                                  <input
                                         type="number"
                                         name="phoneNo"
-                                        {...register("phoneNo", {required: "your phone no is required", maxLength:{value: 11,}})}
+                                        {...register("phoneNo", {required: "your phone no is required", maxLength: {value: 11, message: "invalid phone no"}, minLength: 11,})}
                                   
                                  />
                              {errors.phoneNo && <p className="errors">{errors.phoneNo.message}</p>}

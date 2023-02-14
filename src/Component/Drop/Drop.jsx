@@ -28,7 +28,7 @@ function Drop(){
                         <div className="drop__content" >
                              <div className="drops__para"  key={data.id} onClick={() => handleShow(data.id)}>
                                  <p className="drop__para">{data.header}</p>
-                                 {/* THIS EVENT SHOULD BE CARRIED OUT ON CLICKED */}
+                                 {/* THIS FUNCTION SHOULD BE CARRIED OUT ON CLICKED */}
                                  {isShow ? <ArrowForwardIosIcon className="forward__arr"/> : <KeyboardArrowDownIcon className="forward__arr"/>}
                                
                             </div>
